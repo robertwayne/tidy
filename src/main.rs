@@ -1,9 +1,11 @@
 #![windows_subsystem = "windows"]
 
-use std::env;
-use std::path::{Path, PathBuf};
-use std::time::Duration;
-use std::{fs, io, thread};
+use std::{
+    env, fs, io,
+    path::{Path, PathBuf},
+    thread,
+    time::Duration,
+};
 
 use clokwerk::{Scheduler, TimeUnits};
 
@@ -50,6 +52,6 @@ fn main() {
 
     loop {
         scheduler.run_pending();
-        thread::sleep(Duration::from_millis(1000));
+        thread::sleep(Duration::from_secs(3600));
     }
 }
