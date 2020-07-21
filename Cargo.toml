@@ -1,0 +1,8 @@
+[package]
+name = "tidy"
+version = "0.1.0"
+authors = ["Rob <13954303+robertwayne@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+clokwerk = "0.3.3"
