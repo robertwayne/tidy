@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 clokwerk = "0.3.3"
+fs_extra = "1.2.0"
