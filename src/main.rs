@@ -49,8 +49,6 @@ fn destroy_files(file: PathBuf) {
 fn main() {
     let dir =
         env::var("USERPROFILE").expect("Could not find USERPROFILE in environment variables.");
-    let cwd = fs::read_dir(dir.clone() + "\\Documents");
-    println!("{:?}", (dir.clone(), cwd));
 
     // run once initially before setting up the scheduler, so we can give ownership of `dir` away
     parse_files(format!("{}/{}", dir, "Downloads").as_ref());
